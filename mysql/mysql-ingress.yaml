@@ -1,0 +1,11 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mysql-ingress
+  labels:
+    app: mysql
+spec:
+  backend:
+    serviceName: mysql-service
+    servicePort: 3306
