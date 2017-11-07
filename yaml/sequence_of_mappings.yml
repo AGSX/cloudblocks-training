@@ -1,0 +1,7 @@
+---
+- size: medium
+  color: blue
+- size: large
+  color: red
+- size: large
+  color: green
