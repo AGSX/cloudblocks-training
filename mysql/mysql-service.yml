@@ -6,7 +6,7 @@ metadata:
   labels:
     app: mysql
 spec:
-  type: NodePort
+  type: ClusterIp
   ports:
     # the port that this service should serve on
     - port: 3306
