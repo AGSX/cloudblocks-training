@@ -1,10 +1,8 @@
----
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: mysql
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: mysql
@@ -16,7 +14,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:5.6
+      - image: mysql:{{ .Values.imageTag }}
         name: mysql
         env:
           # Use secret in real usage
